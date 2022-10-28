@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SeaSensor.Repositories\SeaSensor.Repositories.csproj" />
+    <ProjectReference Include="..\SeeSensor.Services\SeeSensor.Services.csproj" />
   </ItemGroup>
 
 </Project>

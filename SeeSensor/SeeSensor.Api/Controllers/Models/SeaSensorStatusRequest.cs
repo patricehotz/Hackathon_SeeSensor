@@ -8,6 +8,6 @@ namespace SeeSensor.Api.Controllers.Models
         public string MacAdress { get; set; } = string.Empty;
 
         [JsonProperty(PropertyName = "batterycharge")]
-        public float BatteryCharge { get; set; }
+        public string BatteryCharge { get; set; }
     }
 }

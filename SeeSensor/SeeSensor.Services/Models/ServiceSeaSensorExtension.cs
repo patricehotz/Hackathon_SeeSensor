@@ -26,7 +26,6 @@ namespace SeeSensor.Services.Models
 
         public static RepoSeaSensorStatus toRepoSeaSensorStatus(this ServiceSeaSensorStatus seaSensorStatus){
             RepoSeaSensorStatus repoSeaSensorStatus = new RepoSeaSensorStatus();
-            repoSeaSensorStatus.Timestamp = seaSensorStatus.Timestamp;
             repoSeaSensorStatus.BatteryCharge = seaSensorStatus.BatteryCharge;
             repoSeaSensorStatus.MacAddress = seaSensorStatus.MacAddress;
             return repoSeaSensorStatus;
