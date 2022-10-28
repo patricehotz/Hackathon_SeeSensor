@@ -11,4 +11,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SeaSensor.Repositories\SeaSensor.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>
