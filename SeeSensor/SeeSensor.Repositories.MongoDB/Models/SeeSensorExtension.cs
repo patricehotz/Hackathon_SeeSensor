@@ -9,9 +9,9 @@ namespace SeeSensor.Repositories.MongoDB.Models
 {
     public static class ParkingSpaceExtensions
     {
-        public static RepoSeaSensor ToRepoCarSpace(this SeeSensorMongoPersistenceModel seeSensorPersistence)
+        public static RepoSeaSensorData ToRepoCarSpace(this SeeSensorMongoPersistenceModel seeSensorPersistence)
         {
-            var seaSensor = new RepoSeaSensor()
+            var seaSensor = new RepoSeaSensorData()
             {
                 Id = seeSensorPersistence.Id,
                 MacAddress = seeSensorPersistence.MacAddress,

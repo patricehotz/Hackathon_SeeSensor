@@ -9,8 +9,8 @@ namespace SeaSensor.Repositories
 {
     public interface ISeaSensorRepository
     {
-        public SeaSensorRepoResponse addData(RepoSeaSensor repoSeaSensor);
-        public RepoSeaSensor addStatus();
+        public SeaSensorRepoResponse addData(RepoSeaSensorData repoSeaSensor);
+        public RepoSeaSensorData addStatus(RepoSeaSensorStatus repoSeaSensor);
 
     }
 }

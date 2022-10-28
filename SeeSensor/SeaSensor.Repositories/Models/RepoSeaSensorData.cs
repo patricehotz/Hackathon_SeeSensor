@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeaSensor.Repositories.Models
 {
-    public class RepoSeaSensor
+    public class RepoSeaSensorData
     {
         public string Id { get; set; }
         public string MacAddress { get; set; }
