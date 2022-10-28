@@ -15,6 +15,14 @@ namespace SeeSensor.Repositories.MongoDB.Models
             {
                 Id = seeSensorPersistence.Id,
                 MacAddress = seeSensorPersistence.MacAddress,
+                Light = seeSensorPersistence.Light,
+                AirTemperature = seeSensorPersistence.AirTemperature,
+                AirHumidity = seeSensorPersistence.AirHumidity,
+                AirPressure = seeSensorPersistence.AirPressure,
+                WaterTemperature = seeSensorPersistence.WaterTemperature,
+                CoordinatesY = seeSensorPersistence.CoordinatesY,
+                CoordinatesX = seeSensorPersistence.CoordinatesX,
+                Timestamp = seeSensorPersistence.Timestamp,
             };
 
             return seaSensor;

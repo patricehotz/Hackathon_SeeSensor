@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeeSensor.Api", "SeeSensor.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeaSensor.Repositories", "SeaSensor.Repositories\SeaSensor.Repositories.csproj", "{F65242E7-F7FD-4EE3-A635-481C890C988C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeeSensor.Repositories.MongoDB", "SeeSensor.Repositories.MongoDB\SeeSensor.Repositories.MongoDB.csproj", "{FFCF10A5-40C2-4DDD-AF7C-58A86732D00E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F65242E7-F7FD-4EE3-A635-481C890C988C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F65242E7-F7FD-4EE3-A635-481C890C988C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F65242E7-F7FD-4EE3-A635-481C890C988C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFCF10A5-40C2-4DDD-AF7C-58A86732D00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCF10A5-40C2-4DDD-AF7C-58A86732D00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCF10A5-40C2-4DDD-AF7C-58A86732D00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCF10A5-40C2-4DDD-AF7C-58A86732D00E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
