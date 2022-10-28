@@ -11,8 +11,10 @@ namespace SeeSensor.Services.Services
 {
     public class SeaSensorService : ISeaSensorService
     {
+
         private ISeaSensorRepository seaSensorRepository;
-        public SeaSensorService() { 
+        public SeaSensorService(ISeaSensorRepository seaSensorRepository) {
+            this.seaSensorRepository = seaSensorRepository;
         }
 
         public ServiceSeaSensorResponse addSensorData(ServiceSeaSensorData sensorData)
