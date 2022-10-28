@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeaSensor.Repositories", "SeaSensor.Repositories\SeaSensor.Repositories.csproj", "{26A62892-15A0-400A-9B75-F341094DF69D}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeeSensor.Services", "SeeSensor.Services\SeeSensor.Services.csproj", "{4D4B9F11-1BCD-4A79-8F65-0118CCBA1059}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< Updated upstream
 		{26A62892-15A0-400A-9B75-F341094DF69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26A62892-15A0-400A-9B75-F341094DF69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26A62892-15A0-400A-9B75-F341094DF69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26A62892-15A0-400A-9B75-F341094DF69D}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{4D4B9F11-1BCD-4A79-8F65-0118CCBA1059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4B9F11-1BCD-4A79-8F65-0118CCBA1059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4B9F11-1BCD-4A79-8F65-0118CCBA1059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4B9F11-1BCD-4A79-8F65-0118CCBA1059}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
