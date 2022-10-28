@@ -22,11 +22,11 @@ namespace SeeSensor.Api.Controllers.Models
         [JsonProperty(PropertyName = "watertemperature")]
         public int Watertemperature { get; set; }
 
-        [JsonProperty(PropertyName = "xcoordinate")]
-        public float XCoordinate { get; set; }
+        [JsonProperty(PropertyName = "coordinatex")]
+        public float CoordinateX { get; set; }
 
-        [JsonProperty(PropertyName = "ycoordinate")]
-        public int YCoordinate { get; set; }
+        [JsonProperty(PropertyName = "coordinatey")]
+        public int CoordinateY { get; set; }
 
     }
 }
