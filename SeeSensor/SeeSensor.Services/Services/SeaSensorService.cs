@@ -20,7 +20,7 @@ namespace SeeSensor.Services.Services
         public ServiceSeaSensorResponse addSensorData(ServiceSeaSensorData sensorData)
         {
             try {
-                sensorData.Timestamp = DateTime.UtcNow;
+                sensorData.Timestamp = DateTime.Now;
                 sensorData.Id = Guid.NewGuid().ToString();
                 seaSensorRepository.addData(ServiceSeaSensorExtension.toRepoSeaSensorData(sensorData));
                 return ServiceSeaSensorResponse.Success;
@@ -35,6 +35,8 @@ namespace SeeSensor.Services.Services
         {
             try
             {
+                sensorState.Timestamp = DateTime.UtcNow;
+                sensorState.Id = Guid.NewGuid().ToString();
                 seaSensorRepository.addStatus(ServiceSeaSensorExtension.toRepoSeaSensorStatus(sensorState));
                 return ServiceSeaSensorResponse.Success;
             }
