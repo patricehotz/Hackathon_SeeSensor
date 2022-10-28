@@ -10,7 +10,7 @@ namespace SeaSensor.Repositories.Models
     {
         public string Id { get; set; }
         public string MacAddress { get; set; }
-        public string BatteryCharge { get; set; }
+        public float BatteryCharge { get; set; }
         public DateTime Timestamp { get; set; }
     }
 }

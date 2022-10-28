@@ -36,6 +36,7 @@ namespace SeeSensor.Services.Models
                 Id = seaSensorStatus.Id,
                 MacAddress = seaSensorStatus.MacAddress,
                 BatteryCharge = seaSensorStatus.BatteryCharge,
+                Timestamp = seaSensorStatus.Timestamp,
             };
           
             return repoSeaSensorStatus;

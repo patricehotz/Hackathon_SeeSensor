@@ -16,7 +16,7 @@ namespace SeeSensor.Repositories.MongoDB.Models
         public string MacAddress { get; set; }
 
         [BsonElement("batterycharge")]
-        public string BatteryCharge { get; set; }
+        public float BatteryCharge { get; set; }
 
         [BsonElement("timestamp")]
         public DateTime Timestamp { get; set; }

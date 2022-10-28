@@ -65,6 +65,8 @@ namespace SeeSensor.Repositories.MongoDB.Models
                 MacAddress = seeSensorPersistence.MacAddress,
                 BatteryCharge = seeSensorPersistence.BatteryCharge,
                 Timestamp = seeSensorPersistence.Timestamp,
+                Id = seeSensorPersistence.Id,
+
             };
 
             return seaSensor;
