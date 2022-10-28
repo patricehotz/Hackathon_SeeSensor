@@ -19,21 +19,21 @@ namespace SeeSensor.Repositories.MongoDB.Models
         public int Light { get; set; }
 
         [BsonElement("airtemperature")]
-        public double AirTemperature { get; set; }
+        public float AirTemperature { get; set; }
 
         [BsonElement("airhumidity")]
-        public double AirHumidity { get; set; }
+        public float AirHumidity { get; set; }
 
         [BsonElement("airpressure")]
-        public double AirPressure { get; set; }
+        public float AirPressure { get; set; }
 
         [BsonElement("watertemperature")]
-        public double WaterTemperature { get; set; }
+        public float WaterTemperature { get; set; }
 
-        [BsonElement("coordinatesY")]
+        [BsonElement("coordinatesy")]
         public double CoordinatesY { get; set; }
 
-        [BsonElement("coordinatesX")]
+        [BsonElement("coordinatesx")]
         public double CoordinatesX { get; set; }
 
         [BsonElement("timestamp")]

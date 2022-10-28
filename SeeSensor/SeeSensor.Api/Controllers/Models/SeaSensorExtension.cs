@@ -6,7 +6,7 @@ namespace SeeSensor.Api.Controllers.Models
     public static class SeaSensorExtension
     {
 
-        public static ServiceSeaSensorData toServiceSeaSensorData(SeaSensorDataRequest seaSensorDataRequest) {
+        public static ServiceSeaSensorData toServiceSeaSensorData(this SeaSensorDataRequest seaSensorDataRequest) {
             ServiceSeaSensorData serviceSeaSensorData = new ServiceSeaSensorData();
             serviceSeaSensorData.MacAdress = seaSensorDataRequest.Macadress;
             serviceSeaSensorData.Light = seaSensorDataRequest.Light;
@@ -19,7 +19,7 @@ namespace SeeSensor.Api.Controllers.Models
             return serviceSeaSensorData;
         }
 
-        public static ServiceSeaSensorStatus toServiceSeaSensorStatus(SeaSensorStatusRequest seaSensorStatusRequest) {
+        public static ServiceSeaSensorStatus toServiceSeaSensorStatus(this SeaSensorStatusRequest seaSensorStatusRequest) {
             ServiceSeaSensorStatus serviceSeaSensorStatus = new ServiceSeaSensorStatus();
             serviceSeaSensorStatus.MacAddress = seaSensorStatusRequest.MacAdress;
             serviceSeaSensorStatus.BatteryCharge = seaSensorStatusRequest.BatteryCharge;

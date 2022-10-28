@@ -13,14 +13,20 @@ namespace SeeSensor.Services.Models
     {
         public static RepoSeaSensorData toRepoSeaSensorData(this ServiceSeaSensorData seaSensordata)
         {
-            RepoSeaSensorData repoSeaSensorData = new RepoSeaSensorData();
-            repoSeaSensorData.MacAddress = seaSensordata.MacAdress;
-            repoSeaSensorData.Light = seaSensordata.Light;
-            repoSeaSensorData.AirHumidity = seaSensordata.AirHumidity;
-            repoSeaSensorData.AirPressure = seaSensordata.AirPressure;
-            repoSeaSensorData.WaterTemperature = seaSensordata.WaterTemperature;
-            repoSeaSensorData.CoordinatesX = seaSensordata.CoordinateX;
-            repoSeaSensorData.CoordinatesY = seaSensordata.CoordinateX;
+            RepoSeaSensorData repoSeaSensorData = new RepoSeaSensorData()
+            {
+                MacAddress = seaSensordata.MacAdress,
+                AirHumidity = seaSensordata.AirHumidity,
+                AirPressure = seaSensordata.AirPressure,
+                AirTemperature = seaSensordata.AirTemperature,
+                CoordinatesX = seaSensordata.CoordinateX,
+                CoordinatesY = seaSensordata.CoordinatY,
+                Id = seaSensordata.Id,
+                Light = seaSensordata.Light,
+                Timestamp = seaSensordata.Timestamp,
+                WaterTemperature = seaSensordata.WaterTemperature,
+            };
+            
             return repoSeaSensorData;
         }
 

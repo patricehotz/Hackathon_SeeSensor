@@ -8,14 +8,19 @@ namespace SeeSensor.Api.Controllers
 {
     public class SeaSensorController : Controller
     {
-        private SeaSensorService seaSensorService;
+        private ISeaSensorService seaSensorService;
+
+        public SeaSensorController(ISeaSensorService SeaSensor)
+        {
+            seaSensorService = SeaSensor;
+        }
 
         [HttpPost ("/data")]
         public ActionResult addDataSet([FromBody] SeaSensorDataRequest seaSensorData)
         {
 
 
-            ServiceSeaSensorResponse response = seaSensorService.addSensorData(SeaSensorExtension.toServiceSeaSensorData(seaSensorData));
+            ServiceSeaSensorResponse response = seaSensorService.addSensorData(seaSensorData.toServiceSeaSensorData());
 
             if (isSuccsess(response))
             {
@@ -32,7 +37,7 @@ namespace SeeSensor.Api.Controllers
         public ActionResult addStatus([FromBody] SeaSensorStatusRequest seaSensorStatus)
         {
 
-            ServiceSeaSensorResponse response = seaSensorService.setStatus(SeaSensorExtension.toServiceSeaSensorStatus(seaSensorStatus));
+            ServiceSeaSensorResponse response = seaSensorService.setStatus(seaSensorStatus.toServiceSeaSensorStatus());
             if (isSuccsess(response))
             {
                 return StatusCode(200);

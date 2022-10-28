@@ -14,19 +14,19 @@ namespace SeeSensor.Api.Controllers.Models
         public float Airtemperature { get; set; }
 
         [JsonProperty(PropertyName = "airhumidity")]
-        public int Airhumidity { get; set; }
+        public float Airhumidity { get; set; }
 
         [JsonProperty(PropertyName = "airpressure")]
         public float Airpressure { get; set; }
 
         [JsonProperty(PropertyName = "watertemperature")]
-        public int Watertemperature { get; set; }
+        public float Watertemperature { get; set; }
 
         [JsonProperty(PropertyName = "coordinatex")]
-        public float CoordinateX { get; set; }
+        public double CoordinateX { get; set; }
 
         [JsonProperty(PropertyName = "coordinatey")]
-        public int CoordinateY { get; set; }
+        public double CoordinateY { get; set; }
 
     }
 }
