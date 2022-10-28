@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeeSensor.Repositories.MongoDB
 {
-    internal class MongoSeeSensorRepository
+    public class MongoSeeSensorRepository
     {
     }
 }
