@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SeeSensor.Repositories.MongoDB.Models
 {
-    public class SeeSensorMongoPersistenceModel
+    public class SeeSensorMongoPersistenceModelData
     {
         [BsonId]
         public string Id { get; set; }
@@ -15,11 +15,8 @@ namespace SeeSensor.Repositories.MongoDB.Models
         [BsonElement("macaddress")]
         public string MacAddress { get; set; }
 
-        [BsonElement("story")]
-        public string Story { get; set; } = string.Empty;
-
         [BsonElement("light")]
-        public string Light { get; set; } = string.Empty;
+        public int Light { get; set; }
 
         [BsonElement("airtemperature")]
         public double AirTemperature { get; set; }
@@ -40,6 +37,6 @@ namespace SeeSensor.Repositories.MongoDB.Models
         public double CoordinatesX { get; set; }
 
         [BsonElement("timestamp")]
-        public double Timestamp { get; set; }
+        public DateTime Timestamp { get; set; }
     }
 }
