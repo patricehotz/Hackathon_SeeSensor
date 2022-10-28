@@ -37,8 +37,7 @@ namespace SeeSensor.Services.Models
                 MacAddress = seaSensorStatus.MacAddress,
                 BatteryCharge = seaSensorStatus.BatteryCharge,
             };
-            repoSeaSensorStatus.BatteryCharge = seaSensorStatus.BatteryCharge;
-            repoSeaSensorStatus.MacAddress = seaSensorStatus.MacAddress;
+          
             return repoSeaSensorStatus;
         }
     }
