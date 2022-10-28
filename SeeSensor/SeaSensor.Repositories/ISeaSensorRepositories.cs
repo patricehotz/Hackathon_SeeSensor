@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SeaSensor.Repositories
 {
-    public interface ICarparkRepository
+    public interface ISeaSensorRepository
     {
         public SeaSensorRepoResponse addData(RepoSeaSensor repoSeaSensor);
         public RepoSeaSensor addStatus();
