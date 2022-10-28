@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SeaSensor.Repositories\SeaSensor.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

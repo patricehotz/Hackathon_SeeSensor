@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeeSensor.Services.Models
 {
-    public class ServiceSeeSensorData 
+    public class ServiceSeaSensorData 
     {
         public string Id { get; set; } = string.Empty;
         public string MacAdress { get; set; } = string.Empty;
@@ -15,8 +15,8 @@ namespace SeeSensor.Services.Models
         public float AirPressure { get; set; }
         public float AirHumidity { get; set; }
         public float WaterTemperature { get; set; }
-        public double XCoordinate { get; set; }
-        public double YCoordinat { get; set; }
-        public DateTime TimeStamp { get; set; }
+        public double CoordinateX { get; set; }
+        public double CoordinatY { get; set; }
+        public DateTime Timestamp { get; set; }
     }
 }

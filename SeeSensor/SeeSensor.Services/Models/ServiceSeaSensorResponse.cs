@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeeSensor.Services.Models
 {
-    public enum ServiceSeeSensorResponse
+    public enum ServiceSeaSensorResponse
     {
         Success,
         InvalidValue,

@@ -4,10 +4,10 @@ using SeeSensor.Api.Controllers.Models;
 
 namespace SeeSensor.Api.Controllers
 {
-    public class SeeSensorController : Controller
+    public class SeaSensorController : Controller
     {
         [HttpPost ("/data")]
-        public ActionResult addDataSet([FromBody] SeeSensorDataRequest seaSensorData)
+        public ActionResult addDataSet([FromBody] SeaSensorDataRequest seaSensorData)
         {
             return null;
         }
