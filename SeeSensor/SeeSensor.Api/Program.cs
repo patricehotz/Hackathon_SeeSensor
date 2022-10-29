@@ -17,6 +17,18 @@ var mongoDbSettings = new MongoDBSettings();
 
 builder.Configuration.AddJsonFile(Environment.CurrentDirectory + "/Configuration/appsettings.json");
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "_myAllowSpecificOrigins",
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin();
+                          policy.AllowAnyMethod();
+                          policy.AllowAnyHeader();
+                      });
+});
+
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddMvcCore();
@@ -44,5 +56,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors("_myAllowSpecificOrigins");
 
 app.Run();
