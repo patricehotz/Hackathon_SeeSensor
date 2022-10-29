@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using SeeSensor.Api.Controllers.Models;
 using SeeSensor.Services.Models;
 using SeeSensor.Services.Services;
+using Newtonsoft.Json;
 
 namespace SeeSensor.Api.Controllers
 {
@@ -19,6 +20,7 @@ namespace SeeSensor.Api.Controllers
         public ActionResult addDataSet([FromBody] SeaSensorDataRequest seaSensorData)
         {
 
+            Console.WriteLine(JsonConvert.SerializeObject(seaSensorData));
 
             ServiceSeaSensorResponse response = seaSensorService.addSensorData(seaSensorData.toServiceSeaSensorData());
 

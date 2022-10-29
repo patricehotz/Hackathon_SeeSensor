@@ -8,14 +8,14 @@ namespace SeeSensor.Api.Controllers.Models
 
         public static ServiceSeaSensorData toServiceSeaSensorData(this SeaSensorDataRequest seaSensorDataRequest) {
             ServiceSeaSensorData serviceSeaSensorData = new ServiceSeaSensorData();
-            serviceSeaSensorData.MacAdress = seaSensorDataRequest.Macadress;
+            serviceSeaSensorData.MacAdress = seaSensorDataRequest.macaddress;
             serviceSeaSensorData.Light = seaSensorDataRequest.Light;
             serviceSeaSensorData.AirHumidity = seaSensorDataRequest.Airhumidity;
             serviceSeaSensorData.AirTemperature = seaSensorDataRequest.Airtemperature;
             serviceSeaSensorData.AirPressure = seaSensorDataRequest.Airpressure;
             serviceSeaSensorData.WaterTemperature =seaSensorDataRequest.Watertemperature;
             serviceSeaSensorData.CoordinateX = seaSensorDataRequest.CoordinateX;
-            serviceSeaSensorData.CoordinatY = seaSensorDataRequest.CoordinateX;
+            serviceSeaSensorData.CoordinatY = seaSensorDataRequest.CoordinateY;
             return serviceSeaSensorData;
         }
 

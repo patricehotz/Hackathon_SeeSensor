@@ -7,6 +7,7 @@ using MongoDB.Driver;
 using SeaSensor.Repositories;
 using SeaSensor.Repositories.Models;
 using SeeSensor.Repositories.MongoDB.Models;
+using Newtonsoft.Json;
 
 namespace SeeSensor.Repositories.MongoDB
 {
@@ -24,6 +25,8 @@ namespace SeeSensor.Repositories.MongoDB
         public SeaSensorRepoResponse addData(RepoSeaSensorData repoSeaSensor)
         {
             var dataQuantity = dataCollection.CountDocuments(DataAll());
+
+            Console.WriteLine(JsonConvert.SerializeObject(repoSeaSensor.ToMongoPersistenceSeaSensorData()));
 
             dataCollection.InsertOne(repoSeaSensor.ToMongoPersistenceSeaSensorData());
 
