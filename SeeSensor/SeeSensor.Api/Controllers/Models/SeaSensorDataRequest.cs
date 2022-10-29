@@ -5,7 +5,7 @@ namespace SeeSensor.Api.Controllers.Models
     public class SeaSensorDataRequest
     {
         [JsonProperty(PropertyName = "macaddress")]
-        public string macaddress { get; set; }
+        public string Macaddress { get; set; }
 
         [JsonProperty(PropertyName = "light")]
         public int Light { get; set; }
